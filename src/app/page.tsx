@@ -9,8 +9,8 @@ export default function Home() {
   const { workExperience } = data;
   return (
     <>
-      <header className="h-[60px] px-8 flex items-center shadow-sm backdrop-blur">
-        <div className="text-2xl">
+      <header className="h-[60px] px-2 sm:px-8 flex items-center shadow-sm backdrop-blur">
+        <div className="text-xl sm:text-2xl">
           <strong>杨炜帆</strong>
           的个人主页
         </div>
@@ -21,17 +21,17 @@ export default function Home() {
         </nav> */}
       </header>
       <main>
-        <section className="flex flex-col items-center p-6 text-center bg-zinc-100">
+        <section className="flex flex-col items-center p-6 text-center  bg-zinc-100">
           <div className="flex items-center">
-            <WrenchScrewdriverIcon className="size-6" />
-            <span className="text-2xl ml-2">专业技能</span>
+            <WrenchScrewdriverIcon className="size-4 sm:size-6" />
+            <span className="text-xl sm:text-2xl ml-2">专业技能</span>
           </div>
-          <div className="mt-6">
+          <div className="mt-6 sm:text-base text-sm">
             作为一名经验丰富的前端工程师，我曾经使用过各种不同的技术，构建交付优秀的项目成果。
           </div>
-          <div className="mt-[50px]">
-            <div className="text-xl">语言 & 运行环境</div>
-            <div className="flex mt-4 w-[500px] flex-wrap items-center ">
+          <div className="mt-[50px] text-sm sm:text-base">
+            <div className="sm:text-xl text-base">语言 & 运行环境</div>
+            <div className="flex mt-4 max-w-[500px] flex-wrap items-center ">
               <div className="icon-container">
                 <span className="icon-[devicon--html5] mr-1"></span>
                 HTML
@@ -54,9 +54,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-8">
-            <div className="text-xl">库 & 框架</div>
-            <div className="flex mt-4 w-[500px] flex-wrap">
+          <div className="mt-8  text-sm sm:text-base">
+            <div className="sm:text-xl text-base">库 & 框架</div>
+            <div className="flex mt-4 max-w-[500px] flex-wrap">
               <div className="icon-container">
                 <span className="icon-[devicon--react] mr-1"></span>
                 React
@@ -83,9 +83,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-8">
-            <div className="text-xl">工具</div>
-            <div className="flex mt-4 w-[500px] flex-wrap">
+          <div className="mt-8  text-sm sm:text-base">
+            <div className="sm:text-xl text-base">工具</div>
+            <div className="flex mt-4 max-w-[500px] flex-wrap">
               <div className="icon-container">
                 <span className="icon-[devicon--vitejs] mr-1"></span>
                 Vite
@@ -136,32 +136,34 @@ export default function Home() {
         </section>
         <section className="flex flex-col items-center p-6">
           <div className="flex items-center">
-            <ShoppingBagIcon className="size-6" />
-            <span className="text-2xl ml-2">工作经历</span>
+            <ShoppingBagIcon className="size-5 sm:size-6" />
+            <span className="text-xl sm:text-2xl ml-2">工作经历</span>
           </div>
-          <div className="mt-6 w-[650px]">{workExperience.desc}</div>
+          <div className="mt-6 sm:text-base text-sm max-w-[650px]">
+            {workExperience.desc}
+          </div>
 
           <div className="mt-10">
             {workExperience.items.map((item, index) => {
               return (
-                <div key={index} className="w-[650px] relative pl-4 pb-6">
-                  <div className="w-1 bg-zinc-200 h-full absolute left-0  top-2"></div>
-                  <div className="absolute -left-1 top-2">
-                    <div className="w-3 h-3 absolute bg-zinc-500 rounded-full "></div>
-                    <div className="w-3 h-3 absolute bg-zinc-400 rounded-full opacity-75 animate-ping"></div>
+                <div key={index} className="max-w-[650px] relative pl-4 pb-6">
+                  <div className="w-[2px] sm:w-1 bg-zinc-200 h-full absolute left-0  top-2"></div>
+                  <div className="absolute -left-[3px] sm:-left-1 top-2">
+                    <div className="w-2 h-2 sm:w-3 sm:h-3 absolute bg-zinc-500 rounded-full "></div>
+                    <div className="w-2 h-2 sm:w-3 sm:h-3 absolute bg-zinc-400 rounded-full opacity-75 animate-ping"></div>
                   </div>
                   <div className="flex items-center justify-between">
-                    <div className="text-xl">
+                    <div className="text-base sm:text-xl">
                       <strong>{item.jobName}</strong>
                     </div>
-                    <div className="text-sm">{item.time}</div>
+                    <div className="text-xs sm:text-sm">{item.time}</div>
                   </div>
-                  <div className="mt-5 flex items-center">
+                  <div className="mt-2 sm:mt-5 flex items-center text-sm sm:text-base">
                     <Image
                       src={item.companyLogo}
                       width={20}
                       height={20}
-                      className="w-[20px] h-[20px] rounded-full mr-1"
+                      className="sm:w-[20px] sm:h-[20px] w-[18px] h-[18px] rounded-full mr-1"
                       alt=""
                     />
                     {item.companyName}
@@ -187,7 +189,7 @@ export default function Home() {
                     return (
                       <div
                         key={index}
-                        className="border mt-2  rounded-md p-4 flex"
+                        className="border mt-2  rounded-md p-4 flex items-center sm:items-start flex-col sm:flex-row "
                       >
                         <div className="flex flex-none w-[100px] flex-col mr-5  items-center">
                           <div className="w-[70px] h-[70px] rounded-full bg-zinc-100 flex justify-center items-center">
@@ -203,12 +205,12 @@ export default function Home() {
                             <strong>{project.name}</strong>
                           </div>
                         </div>
-                        <div>
-                          <div className="text-sm break-all">
+                        <div className="text-sm  sm:text-base">
+                          <div className="text-sm break-all mt-2 sm:mt-0">
                             {project.desc}
                           </div>
                           <div className="mt-2 font-medium">相关技术</div>
-                          <div className="flex mt-2">
+                          <div className="flex mt-1 sm:mt-2">
                             <div>Html</div>
                             <span className=" "></span>
                             <div>CSS</div>
@@ -222,23 +224,23 @@ export default function Home() {
             })}
             {data.schoolExperiences.map((item, index) => {
               return (
-                <div key={index} className="w-[650px] pl-4 relative">
-                  <div className="absolute -left-1 top-2">
-                    <div className="w-3 h-3 absolute bg-zinc-500 rounded-full "></div>
-                    <div className="w-3 h-3 absolute bg-zinc-400 rounded-full opacity-75 animate-ping"></div>
+                <div key={index} className="max-w-[650px] pl-4 relative">
+                  <div className="absolute -left-[3px] sm:-left-1 top-2">
+                    <div className="w-2 h-2 sm:w-3 sm:h-3 absolute bg-zinc-500 rounded-full "></div>
+                    <div className="w-2 h-2 sm:w-3 sm:h-3 absolute bg-zinc-400 rounded-full opacity-75 animate-ping"></div>
                   </div>
                   <div className="flex items-center justify-between">
-                    <div className="text-xl">
+                    <div className="text-base sm:text-xl">
                       <strong>{item.degree}</strong>
                     </div>
-                    <div className="text-sm">{item.time}</div>
+                    <div className="text-xs sm:text-sm">{item.time}</div>
                   </div>
-                  <div className="mt-5 flex items-center">
+                  <div className="mt-2 sm:mt-5 flex items-center text-sm sm:text-base">
                     <Image
                       src={item.schoolLogo}
                       width={20}
                       height={20}
-                      className="w-[20px] mr-1 h-[20px] rounded-full"
+                      className="sm:w-[20px] sm:h-[20px] w-[18px] h-[18px] mr-1 rounded-full"
                       alt=""
                     />
                     {item.school}
@@ -248,17 +250,19 @@ export default function Home() {
             })}
           </div>
         </section>
-
-        <section></section>
       </main>
-      <footer className="bg-zinc-100 text-xs h-[100px] flex items-center justify-center">
+      <footer className="bg-zinc-100 text-xs h-[100px] flex flex-col sm:flex-row items-center justify-center">
         <div>
           由<strong>杨炜帆</strong>设计和制作
         </div>
-        <div className="w-[1px] h-[15px] bg-zinc-300 mx-4"></div>
-        <div>版权所有 © 2024 - 保留所有权利</div>
-        <div className="w-[1px] h-[15px] bg-zinc-300 mx-4"></div>
-        <div>最近更新： 2024-05-02</div>
+        <div className=" hidden sm:block w-[1px] h-[15px] bg-zinc-300 mx-4"></div>
+        <div className="order-2 mt-2 sm:mt-0 sm:order-1">
+          版权所有 © 2024 - 保留所有权利
+        </div>
+        <div className="hidden  sm:block w-[1px] h-[15px] bg-zinc-300 mx-4"></div>
+        <div className="order-1 sm:order-2 mt-2 sm:mt-0">
+          最近更新： 2024-05-02
+        </div>
       </footer>
     </>
   );
