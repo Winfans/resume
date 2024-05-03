@@ -6,10 +6,11 @@ const nextConfig = isDev
     : {
         distDir: "dist",
         output: "export",
+        basePath: '/resume',
         // images: {
         //     loader: "custom",
         //     loaderFile: "./image-loader.js",
         // },
     };
 
-export default nextConfig;
+export default Object.assign(nextConfig, {});
