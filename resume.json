@@ -1,0 +1,97 @@
+{
+  "workExperience": {
+    "desc": "作为一名团队合作者，我在不同的公司里与不同的工作伙伴共事，为这些组织贡献了很多价值。",
+    "items": [
+      {
+        "jobName": "前端工程师",
+        "time": "2023.04 - 2024.05 · 1 年 1 个月",
+        "companyName": "NXG Labs",
+        "companyLogo": "/imgs/nxg.png",
+        "companyDesc": "一家创新科技公司，专注于人工智能和区块钱技术的研发",
+        "summaries": [
+          "参与网站的整体页面改版与重构，同时将网站由 PHP 迁移至 Ruby on 参与网站的整体页面改版与重构，同时将网站由 PHP 迁移至 Ruby on Rails 框架。",
+          "参与网站的整体页面改版与重构，同时将网站由 PHP 迁移至 Ruby on 参与网站的整体页面改版与重构，同时将网站由 PHP 迁移至 Ruby on Rails 框架。"
+        ],
+        "projects": [
+          {
+            "logo": "/imgs/characterx.png",
+            "name": "CharacterX",
+            "desc": "一个用于为我们维护的各项目初始化页面框架和所有公共能力的 SDK。通过这个SDK，我们可以在几分钟内发布一个具有标准化的能力和一致的体验的新网站系统。它也大大提高了现有系统的可维护性。"
+          }
+        ]
+      },
+      {
+        "jobName": "前端工程师",
+        "time": "2021.07 - 2023.01 · 1 年 7 个月",
+        "companyName": "腾讯",
+        "companyLogo": "/imgs/tx.png",
+        "companyDesc": "我工作的部门是在 CSIG 事业群的智慧零售，后来 toB 业务独立出来成立了营销产品部",
+        "summaries": [
+          "参与网站的整体页面改版与重构，同时将网站由 PHP 迁移至 Ruby on 参与网站的整体页面改版与重构，同时将网站由 PHP 迁移至 Ruby on Rails 框架。"
+        ],
+        "projects": [
+          {
+            "logo": "/imgs/tmc.png",
+            "name": "腾讯营销云",
+            "desc": "一个用于为我们维护的各项目初始化页面框架和所有公共能力的 SDK。通过这个SDK，我们可以在几分钟内发布一个具有标准化的能力和一致的体验的新网站系统。它也大大提高了现有系统的可维护性。"
+          },
+
+          {
+            "logo": "/imgs/tcm.png",
+            "name": "腾讯云Mall",
+            "desc": "一个用于为我们维护的各项目初始化页面框架和所有公共能力的 SDK。通过这个SDK，我们可以在几分钟内发布一个具有标准化的能力和一致的体验的新网站系统。它也大大提高了现有系统的可维护性。"
+          },
+          {
+            "logo": "/imgs/td.png",
+            "name": "TDesign",
+            "desc": ""
+          }
+        ]
+      },
+      {
+        "jobName": "前端工程师",
+        "tag": "创业",
+        "time": "2019.11 - 2021.04 · 1 年 6 个月",
+        "companyName": "致岭科技",
+        "companyLogo": "/imgs/zl.png",
+        "companyDesc": "一家以从事科技推广和应用服务业为主的企业",
+        "summaries": [
+          "参与网站的整体页面改版与重构，同时将网站由 PHP 迁移至 Ruby on 参与网站的整体页面改版与重构，同时将网站由 PHP 迁移至 Ruby on Rails 框架。"
+        ],
+        "projects": [
+          {
+            "logo": "/imgs/jobgo.png",
+            "name": "青鸟集",
+            "desc": "一个用于为我们维护的各项目初始化页面框架和所有公共能力的 SDK。通过这个SDK，我们可以在几分钟内发布一个具有标准化的能力和一致的体验的新网站系统。它也大大提高了现有系统的可维护性。"
+          }
+        ]
+      },
+      {
+        "jobName": "前端工程师",
+        "tag": "实习",
+        "time": "2020.05 - 2020.08 · 4 个月",
+        "companyName": "腾讯",
+        "companyLogo": "/imgs/tx.png",
+        "companyDesc": "我工作的部门是在 CSIG 事业群的桌面安全产品部",
+        "summaries": [
+          "参与网站的整体页面改版与重构，同时将网站由 PHP 迁移至 Ruby on 参与网站的整体页面改版与重构，同时将网站由 PHP 迁移至 Ruby on Rails 框架。"
+        ],
+        "projects": [
+          {
+            "logo": "",
+            "name": "御见智能安服",
+            "desc": "一个用于为我们维护的各项目初始化页面框架和所有公共能力的 SDK。通过这个SDK，我们可以在几分钟内发布一个具有标准化的能力和一致的体验的新网站系统。它也大大提高了现有系统的可维护性。"
+          }
+        ]
+      }
+    ]
+  },
+  "schoolExperiences": [
+    {
+      "schoolLogo": "/imgs/ls.png",
+      "school": "岭南师范学院",
+      "time": "2017-2021",
+      "degree": "本科 学士学位 软件工程"
+    }
+  ]
+}
