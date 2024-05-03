@@ -1,3 +1,3 @@
 export default function ImageLoader({ src }) {
-  return `https://character-website.pages.dev${src}`;
+  return `https://winfans.github.io/resume${src}`;
 }
