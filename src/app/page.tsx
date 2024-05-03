@@ -29,40 +29,108 @@ export default function Home() {
           <div className="mt-6">
             作为一名经验丰富的前端工程师，我曾经使用过各种不同的技术，构建交付优秀的项目成果。
           </div>
-          <div className="mt-6">
+          <div className="mt-[50px]">
             <div className="text-xl">语言 & 运行环境</div>
-            <div className="flex mt-2 w-[400px] border flex-wrap">
-              <div>HTML</div>
-              <div>CSS</div>
-              <div>JavaScript</div>
-              <div>TypeScript</div>
-              <div>Node.js</div>
+            <div className="flex mt-4 w-[500px] flex-wrap items-center ">
+              <div className="icon-container">
+                <span className="icon-[devicon--html5] mr-1"></span>
+                HTML
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--css3] mr-1"></span>
+                CSS
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--javascript] mr-1"></span>
+                JavaScript
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--typescript] mr-1"></span>
+                TypeScript
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--nodejs] mr-1"></span>
+                Node.js
+              </div>
             </div>
           </div>
-          <div className="mt-3">
-            <div>库 & 框架</div>
-            <div className="flex mt-2 w-[400px] border flex-wrap">
-              <div>React</div>
-              <div>Redux</div>
-              <div>Tailwind CSS</div>
-              <div>axios</div>
-              <div>Next.js</div>
-              <div>Vue.js</div>
+          <div className="mt-8">
+            <div className="text-xl">库 & 框架</div>
+            <div className="flex mt-4 w-[500px] flex-wrap">
+              <div className="icon-container">
+                <span className="icon-[devicon--react] mr-1"></span>
+                React
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--redux] mr-1"></span>
+                Redux
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--nextjs] mr-1"></span>
+                Next.js
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--tailwindcss] mr-1"></span>
+                Tailwind CSS
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon-plain--axios] mr-1"></span>
+                axios
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--vuejs] mr-1"></span>
+                Vue.js
+              </div>
             </div>
           </div>
-          <div className="mt-3">
-            <div>工具</div>
-            <div className="flex mt-2 w-[400px] border flex-wrap">
-              <div>Vite</div>
-              <div>Rollup</div>
-              <div>webpack</div>
-              <div>ESLint</div>
-              <div>Prettier</div>
-              <div>npm</div>
-              <div>pnpm</div>
-              <div>Yarn</div>
-              <div>Jest</div>
-              <div>Git</div>
+          <div className="mt-8">
+            <div className="text-xl">工具</div>
+            <div className="flex mt-4 w-[500px] flex-wrap">
+              <div className="icon-container">
+                <span className="icon-[devicon--vitejs] mr-1"></span>
+                Vite
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--webpack] mr-1"></span>
+                webpack
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--rollup] mr-1"></span>
+                Rollup
+              </div>
+              <div className="icon-container">
+                <span className="icon-[skill-icons--gulp]  mr-1"></span>
+                gulp.js
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--pnpm] mr-1"></span>
+                pnpm
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--npm-wordmark] mr-1"></span>
+                npm
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--yarn] mr-1"></span>
+                Yarn
+              </div>
+              <div className="icon-container">
+                {/* <span className="icon-[devicon--jest] mr-1"></span> */}
+                <span className="icon-[skill-icons--jest] mr-1"></span>
+                Jest
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--eslint] mr-1"></span>
+                ESLint
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--prettier] mr-1"></span>
+                Prettier
+              </div>
+              <div className="icon-container">
+                <span className="icon-[devicon--git] mr-1"></span>
+                Git
+              </div>
             </div>
           </div>
         </section>
@@ -103,12 +171,12 @@ export default function Home() {
                       </div>
                     )}
                   </div>
-                  <div className="mt-2 text-sm text-zinc-500">
+                  <div className="mt-2 text-sm text-zinc-500 break-all">
                     {item.companyDesc}
                   </div>
                   <div className="mt-5">概览</div>
                   <div className="mt-2">
-                    <ul className="list-disc pl-4 text-zinc-500 leading-normal text-sm">
+                    <ul className="list-disc pl-4 text-zinc-500 leading-normal text-sm break-all">
                       {item.summaries.map((summary, index) => {
                         return <li key={index}>{summary}</li>;
                       })}
@@ -121,7 +189,7 @@ export default function Home() {
                         key={index}
                         className="border mt-2  rounded-md p-4 flex"
                       >
-                        <div className="flex flex-col mr-5 flex-none items-center">
+                        <div className="flex flex-none w-[100px] flex-col mr-5  items-center">
                           <div className="w-[70px] h-[70px] rounded-full bg-zinc-100 flex justify-center items-center">
                             <Image
                               src={project.logo}
@@ -136,10 +204,13 @@ export default function Home() {
                           </div>
                         </div>
                         <div>
-                          <div className="text-sm">{project.desc}</div>
+                          <div className="text-sm break-all">
+                            {project.desc}
+                          </div>
                           <div className="mt-2 font-medium">相关技术</div>
                           <div className="flex mt-2">
                             <div>Html</div>
+                            <span className=" "></span>
                             <div>CSS</div>
                           </div>
                         </div>

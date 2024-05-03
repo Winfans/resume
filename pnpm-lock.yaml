@@ -22,6 +22,21 @@ dependencies:
     version: 18.0.0(react@18.0.0)
 
 devDependencies:
+  '@iconify-json/arcticons':
+    specifier: ^1.1.102
+    version: 1.1.102
+  '@iconify-json/devicon':
+    specifier: ^1.1.40
+    version: 1.1.40
+  '@iconify-json/devicon-plain':
+    specifier: ^1.1.39
+    version: 1.1.39
+  '@iconify-json/skill-icons':
+    specifier: ^1.1.8
+    version: 1.1.8
+  '@iconify/tailwind':
+    specifier: ^1.0.1
+    version: 1.0.1
   '@types/node':
     specifier: ^20
     version: 20.0.0
@@ -99,6 +114,40 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify-json/arcticons@1.1.102:
+    resolution: {integrity: sha512-oQQtYQRjEfGqJaMQp6OTusHnKBxy1Fyxn0XSER2/w3a78BHV/3U5sUfuY7xfdR4Zo0u64D3uMPu1kLFL9U7IGA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/devicon-plain@1.1.39:
+    resolution: {integrity: sha512-S9mQFhea5cJbAjOdQZ1Du6k4P+BFD4b1NnGU4vBnZApei6V9o74x+Ne+miTpA62dmZ/+B18xhGVRO/gVnCHX1A==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/devicon@1.1.40:
+    resolution: {integrity: sha512-1uR1QlGvLp7t8qaxBY/zM14xoUOgIEVfXK0QhLyPNrpuDrdcootx+EEOhqAQMjJLNlwRiYgcWEAuYfGM0Aixew==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/skill-icons@1.1.8:
+    resolution: {integrity: sha512-pzgiS7bVDyyff9HNXQkkwZSaSc36TVQYhXMr6tBu/XmAreXdj4xdkTRpPcnwtHlhHwsI4NDCe/l3QiWavqsbkw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify/tailwind@1.0.1:
+    resolution: {integrity: sha512-Y0AbOvabPJ4qjhQGWvCfhWoYC7aETqYAg9V++xkHFqy9gcUteKnEEmgOEsoOf6T7V9Xz34qKNLnaIAVkt1gLtQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify/types@2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
   /@isaacs/cliui@8.0.2:
