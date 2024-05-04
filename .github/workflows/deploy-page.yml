@@ -38,6 +38,7 @@ jobs:
         with:
           node-version: 18.18.2
       - run: npm i -g pnpm
+      - run: pnpm i env-cmd -D
       - run: pnpm i
       - run: pnpm build:github
 
