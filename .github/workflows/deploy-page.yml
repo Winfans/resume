@@ -39,7 +39,7 @@ jobs:
           node-version: 18.18.2
       - run: npm i -g pnpm
       - run: pnpm i
-      - run: pnpm build
+      - run: pnpm build:github
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
